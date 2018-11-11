@@ -54,7 +54,7 @@
 					<p></p>
 					
 					<!--Map-->
-					<div id="map" style="width:700px; height:500px; background-color:red"></div>
+					<div id="map" style="width:700px; height:500px; background-color:gray"></div>
 					
 					<!--Sorry for all these line breaks instead of using CSS.......-->
 					<br>
@@ -91,7 +91,6 @@
 			<p>Copyright 2018 MostWanted Game Development (TM)</p>
 		</footer>	
 				
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDam8txSWDO_R_viZ96dl4cka190I9kroQ&callback=initMap" async defer></script>
 		<script>
 			// Google Maps - Show user position on map
 			
@@ -134,9 +133,11 @@
 			function fail(){
 				// console.log("Geolocation information not available or not authorized.");
 				document.getElementById("map").innerHTML = "Unable to access your current location.";
-			}			
+			}	
 				
 		</script>
+		<!--Google Maps API-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDam8txSWDO_R_viZ96dl4cka190I9kroQ&callback=geoTest" async defer></script>
 		
 		<!--Privacy page code-->
 		<script>
