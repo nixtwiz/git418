@@ -137,7 +137,7 @@
 			// navigator.geolocation.getCurrentPosition(showPosition);
 			document.getElementsByTagName("p")[5].innerHTML = "Online: " + navigator.onLine;
 			function showPosition(position){
-				document.getElementsByTagName("p")[4].innerHTML = "<p>Geolocation: Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude + "</p>";
+				document.getElementsByTagName("p")[4].innerHTML = "<p>Geolocation: <br>     Latitude: " + position.coords.latitude + "<br>     Longitude: " + position.coords.longitude + "<br>     Altitude:" + position.coords.altitude + "</p>";
 			}
 		</script>	
 		
