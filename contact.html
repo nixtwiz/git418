@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--
+			Author: Nicholas Flowers
+			Date: 1/16/18
+		-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>MWGD | Support</title>
+		<link rel="stylesheet" href="mwgdStylesheet.css" />
+		<script src="modernizr.custom.05819.js"></script>
+		<script src="modernizr.custom.65897.js"></script>
+	</head>
+	
+	<body id="page_contact">
+		<div class="pageWrapper">
+			<header>
+				<h1 class="structureHead">MostWanted GD Home Page</h1>	
+				<h2 class="structureHead">MWGD Navigation</h2>				
+				<nav id="menu-primary">
+					<a id="logo" href="index.html">				
+						<img id="logoNormal" alt="mwgd logo" src="images/main/MWGDLogoFull.png"/>	
+						<img id="logoInvert" alt="mwgd logo" src="images/main/MWGDLogoFull_Invert.png"/>
+					</a>
+					<ul id="menu-items">					
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="news.html">News</a>
+						</li>
+						<li>
+							<a href="games.html">Our Games</a>
+						</li>
+						<li>
+							<a href="about.html">About Us</a>
+						</li>
+						<li id="li-nav-current">
+							<a href="contact.html">contact</a>
+						</li>
+					</ul>					
+					<button id="dropdownMenu">Menu</button>
+				</nav>					
+			</header>			
+			<main>
+				<div id="popupWrapper">
+					<button id="closeView">X</button>
+					<iframe id="faderContent"></iframe>
+					<div id="fader"></div>
+				</div>				
+				<h1 id="cu_h1">Contact Us</h1>
+				<h3 id="cu_h3">Leave us a message and we'll get back to you!</h3>
+				<div id="cu_wrapper">
+					<form id="cu_form">
+						<ul>
+							<li>
+								<label for="formName" class="cu_label">Name:</label>
+								<input type="text" id="formName" class="contactUsFormInput">
+								<p id="formNameMessage" class="cu_message"></p>
+							</li>
+							<li>
+								<label for="formEmail" class="cu_label">Email:</label>
+								<input type="text" id="formEmail" class="contactUsFormInput" placeholder="example@email.com">
+								<p id="formEmailMessage" class="cu_message"></p>
+							</li>
+							<li>
+								<label for="subject" class="cu_label">Subject:</label>
+								<select name="subject" class="contactUsFormInput" id="formSubject">
+									<option value="Game Bug">Game Bugs</option>
+									<option value="Technical Support">Technical Support</option>
+									<option value="Business Inquiry">Business Inquiry</option>
+									<option value="Other">Other</option>
+								</select>
+							</li>							
+							<li>
+								Please select any issues you are having:
+								<ol id="itemList">
+								</ol>
+								Selected issues:
+								<ol id="selectedItemList">
+									
+								</ol>
+								<p id="selectedString"></p>
+							</li>
+							<li id="cu_textarea">
+								<label for="formMessage" class="cu_label">Message:</label>
+								<textarea  rows="4" cols="50" id="formMessage" class="contactUsFormInput" placeholder="What brings you here?"></textarea>
+								<p id="formMessageMessage" class="cu_message"></p>
+							</li>
+							<li>
+								<button type="button" id="formButton">Submit</button>
+							</li>
+						</ul>
+					</form>
+				</div>
+				<div id="formSent"></div>
+			</main>
+		</div>
+		<footer>
+			<p>Useful Links</p>
+			<ul id="footer-linkList">
+				<li><a href="privacy.html">Privacy + Internet Safety tips</a></li>
+				<li>|</li>
+				<li><a href="datecalc.html">Membership Calculator</a></li>
+			</ul>
+			<p>Copyright 2018 MostWanted Game Development (TM)</p>
+		</footer>	
+		
+		<script src="mwgdScript.js"></script>
+		<script src="pageScripts/contactUsPage.js"></script>
+	</body>
+</html>
